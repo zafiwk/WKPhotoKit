@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23B2FF921A13C7200E72482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B2FF821A13C7200E72482 /* AppDelegate.m */; };
+		F23B2FFC21A13C7200E72482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B2FFB21A13C7200E72482 /* ViewController.m */; };
+		F23B2FFF21A13C7200E72482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23B2FFD21A13C7200E72482 /* Main.storyboard */; };
+		F23B300121A13C7300E72482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23B300021A13C7300E72482 /* Assets.xcassets */; };
+		F23B300421A13C7300E72482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23B300221A13C7300E72482 /* LaunchScreen.storyboard */; };
+		F23B300721A13C7400E72482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B300621A13C7400E72482 /* main.m */; };
+		F23B301621A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */; };
+		F23B301A21A1405A00E72482 /* WKSelectPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */; };
+		F23B301E21A143C900E72482 /* WKSelectPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */; };
+		F23B302121A1459300E72482 /* WKSelectPhotoPickerData.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B302021A1459300E72482 /* WKSelectPhotoPickerData.m */; };
+		F23B302621A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */; };
+		F23B302721A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F23B2FF421A13C7200E72482 /* WKPhotoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKPhotoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23B2FF721A13C7200E72482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F23B2FF821A13C7200E72482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F23B2FFA21A13C7200E72482 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F23B2FFB21A13C7200E72482 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F23B2FFE21A13C7200E72482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F23B300021A13C7300E72482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23B300321A13C7300E72482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F23B300521A13C7400E72482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23B300621A13C7400E72482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F23B301421A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroupVC.h; sourceTree = "<group>"; };
+		F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroupVC.m; sourceTree = "<group>"; };
+		F23B301821A1405A00E72482 /* WKSelectPhotoAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoAsset.h; sourceTree = "<group>"; };
+		F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoAsset.m; sourceTree = "<group>"; };
+		F23B301C21A143C900E72482 /* WKSelectPhotoPickerGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroup.h; sourceTree = "<group>"; };
+		F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroup.m; sourceTree = "<group>"; };
+		F23B301F21A1459300E72482 /* WKSelectPhotoPickerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerData.h; sourceTree = "<group>"; };
+		F23B302021A1459300E72482 /* WKSelectPhotoPickerData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerData.m; sourceTree = "<group>"; };
+		F23B302321A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroupVCCellTableViewCell.h; sourceTree = "<group>"; };
+		F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroupVCCellTableViewCell.m; sourceTree = "<group>"; };
+		F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKSelectPhotoPickerGroupVCCellTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23B2FF121A13C7200E72482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23B2FEB21A13C7200E72482 = {
+			isa = PBXGroup;
+			children = (
+				F23B2FF621A13C7200E72482 /* WKPhotoKit */,
+				F23B2FF521A13C7200E72482 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F23B2FF521A13C7200E72482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23B2FF421A13C7200E72482 /* WKPhotoKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23B2FF621A13C7200E72482 /* WKPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				F23B300D21A13C8300E72482 /* WKPhotoKit */,
+				F23B2FF721A13C7200E72482 /* AppDelegate.h */,
+				F23B2FF821A13C7200E72482 /* AppDelegate.m */,
+				F23B2FFA21A13C7200E72482 /* ViewController.h */,
+				F23B2FFB21A13C7200E72482 /* ViewController.m */,
+				F23B2FFD21A13C7200E72482 /* Main.storyboard */,
+				F23B300021A13C7300E72482 /* Assets.xcassets */,
+				F23B300221A13C7300E72482 /* LaunchScreen.storyboard */,
+				F23B300521A13C7400E72482 /* Info.plist */,
+				F23B300621A13C7400E72482 /* main.m */,
+			);
+			path = WKPhotoKit;
+			sourceTree = "<group>";
+		};
+		F23B300D21A13C8300E72482 /* WKPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				F23B300F21A13CF400E72482 /* class */,
+				F23B300E21A13CEA00E72482 /* thirdparty */,
+			);
+			path = WKPhotoKit;
+			sourceTree = "<group>";
+		};
+		F23B300E21A13CEA00E72482 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		F23B300F21A13CF400E72482 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				F23B302221A1564900E72482 /* view */,
+				F23B301721A13FE700E72482 /* model */,
+				F23B301321A13D7000E72482 /* vc */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		F23B301321A13D7000E72482 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F23B301421A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.h */,
+				F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F23B301721A13FE700E72482 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F23B301821A1405A00E72482 /* WKSelectPhotoAsset.h */,
+				F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */,
+				F23B301C21A143C900E72482 /* WKSelectPhotoPickerGroup.h */,
+				F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */,
+				F23B301F21A1459300E72482 /* WKSelectPhotoPickerData.h */,
+				F23B302021A1459300E72482 /* WKSelectPhotoPickerData.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F23B302221A1564900E72482 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F23B302321A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.h */,
+				F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */,
+				F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23B2FF321A13C7200E72482 /* WKPhotoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23B300A21A13C7400E72482 /* Build configuration list for PBXNativeTarget "WKPhotoKit" */;
+			buildPhases = (
+				F23B2FF021A13C7200E72482 /* Sources */,
+				F23B2FF121A13C7200E72482 /* Frameworks */,
+				F23B2FF221A13C7200E72482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKPhotoKit;
+			productName = WKPhotoKit;
+			productReference = F23B2FF421A13C7200E72482 /* WKPhotoKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23B2FEC21A13C7200E72482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WK;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wk;
+				TargetAttributes = {
+					F23B2FF321A13C7200E72482 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F23B2FEF21A13C7200E72482 /* Build configuration list for PBXProject "WKPhotoKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F23B2FEB21A13C7200E72482;
+			productRefGroup = F23B2FF521A13C7200E72482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23B2FF321A13C7200E72482 /* WKPhotoKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23B2FF221A13C7200E72482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23B300421A13C7300E72482 /* LaunchScreen.storyboard in Resources */,
+				F23B300121A13C7300E72482 /* Assets.xcassets in Resources */,
+				F23B2FFF21A13C7200E72482 /* Main.storyboard in Resources */,
+				F23B302721A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23B2FF021A13C7200E72482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23B302121A1459300E72482 /* WKSelectPhotoPickerData.m in Sources */,
+				F23B301E21A143C900E72482 /* WKSelectPhotoPickerGroup.m in Sources */,
+				F23B2FFC21A13C7200E72482 /* ViewController.m in Sources */,
+				F23B302621A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m in Sources */,
+				F23B301621A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m in Sources */,
+				F23B301A21A1405A00E72482 /* WKSelectPhotoAsset.m in Sources */,
+				F23B300721A13C7400E72482 /* main.m in Sources */,
+				F23B2FF921A13C7200E72482 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F23B2FFD21A13C7200E72482 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23B2FFE21A13C7200E72482 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F23B300221A13C7300E72482 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23B300321A13C7300E72482 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23B300821A13C7400E72482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F23B300921A13C7400E72482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23B300B21A13C7400E72482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2U3ZPPSL6;
+				INFOPLIST_FILE = WKPhotoKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.WKPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F23B300C21A13C7400E72482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2U3ZPPSL6;
+				INFOPLIST_FILE = WKPhotoKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wk.WKPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23B2FEF21A13C7200E72482 /* Build configuration list for PBXProject "WKPhotoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23B300821A13C7400E72482 /* Debug */,
+				F23B300921A13C7400E72482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23B300A21A13C7400E72482 /* Build configuration list for PBXNativeTarget "WKPhotoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23B300B21A13C7400E72482 /* Debug */,
+				F23B300C21A13C7400E72482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23B2FEC21A13C7200E72482 /* Project object */;
+}
