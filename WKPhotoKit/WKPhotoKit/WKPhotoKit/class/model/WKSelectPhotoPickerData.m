@@ -7,10 +7,17 @@
 //
 
 #import "WKSelectPhotoPickerData.h"
-
+@interface WKSelectPhotoPickerData()
+@property(nonatomic,strong)PHCachingImageManager* imageManager;
+@end
+static WKSelectPhotoPickerData* pick;
 @implementation WKSelectPhotoPickerData
 + (instancetype) defaultPicker{
-        return  [[WKSelectPhotoPickerData alloc]init];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        pick=[[WKSelectPhotoPickerData alloc]init];
+    });
+    return  pick;
 }
 
 -(NSArray<WKSelectPhotoPickerGroup*>*)getAllGroupWithPhotos{
@@ -77,7 +84,7 @@
                 photoGroup.group=assetCollection;
                 photoGroup.groupName=assetCollection.localizedTitle;
                 photoGroup.assetsCount=imageList.count;
-                WKSelectPhotoAsset* photoAssets=[imageList firstObject];
+                WKPhotoAsset* photoAssets=[imageList firstObject];
                 photoGroup.firstAsset=photoAssets;
                 [dataList addObject:photoGroup];
             }
@@ -92,7 +99,7 @@
     }else {
         PHAsset* asset=(PHAsset*)colletion;
         if (allPhotos&&asset.mediaType==PHAssetMediaTypeImage) {
-            WKSelectPhotoAsset* photoAssets=[[WKSelectPhotoAsset alloc]init];
+            WKPhotoAsset* photoAssets=[[WKPhotoAsset alloc]init];
             photoAssets.asset=asset;
             [dataList addObject:photoAssets];
         }
@@ -100,15 +107,62 @@
     }
     return dataList;
 }
-
-- (void) getAssetsPhotoWithURLs:(PHAsset *) asset callBack:(callBackBlock ) callBack withSize:(CGSize)size{
+-(void)stopGetAssets:(PHImageRequestID)requestId{
     PHImageRequestOptions* option=[[PHImageRequestOptions alloc]init];
     //允许使用网络下载图片
     option.networkAccessAllowed=YES;
     PHImageManager* imageManager=[PHImageManager defaultManager];
-    [imageManager requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFill options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        callBack(result);
+    [imageManager cancelImageRequest:requestId];
+}
+- (void) getAssetsPhotoWithPHAsset:(WKPhotoAsset*) asset callBack:(callBackBlock ) callBack withSize:(CGSize)size{
+    PHAsset* phAsset =asset.asset;
+    PHImageRequestOptions* option=[[PHImageRequestOptions alloc]init];
+    //允许使用网络下载图片
+    option.networkAccessAllowed=YES;
+    option.resizeMode=PHImageRequestOptionsResizeModeExact;
+    option.normalizedCropRect=CGRectMake(0, 0, asset.asset.pixelWidth, asset.asset.pixelHeight);
+    if (size.width>phAsset.pixelWidth) {
+        size.width=phAsset.pixelWidth;
+    }
+    
+    if (size.height>phAsset.pixelHeight) {
+        size.height = phAsset.pixelHeight;
+    }
+
+
+    [self.imageManager requestImageForAsset:phAsset targetSize:size contentMode:PHImageContentModeAspectFill options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            callBack(result);
     }];
     
+  
 }
+
+
+- (NSArray<WKPhotoAsset*>*) getGroupPhotosWithGroup : (WKSelectPhotoPickerGroup *) pickerGroup{
+    NSArray* imageList=[self fetchResultWith:pickerGroup.group withPhotos:YES];
+    return imageList;
+}
+
+-(void)cachingImage:(WKPhotoAsset*)asset{
+    PHImageRequestOptions* requestOption=[[PHImageRequestOptions alloc]init];
+    requestOption.networkAccessAllowed=YES;
+    requestOption.resizeMode=PHImageRequestOptionsResizeModeExact;
+    requestOption.normalizedCropRect=CGRectMake(0, 0, asset.asset.pixelWidth, asset.asset.pixelHeight);
+    [self.imageManager startCachingImagesForAssets:@[asset.asset] targetSize:CGSizeMake(asset.asset.pixelWidth, asset.asset.pixelHeight) contentMode:PHImageContentModeAspectFill options:requestOption];
+}
+
+-(void)stopCaching:(WKPhotoAsset*)asset{
+    PHImageRequestOptions* requestOption=[[PHImageRequestOptions alloc]init];
+    requestOption.networkAccessAllowed=YES;
+    requestOption.resizeMode=PHImageRequestOptionsResizeModeExact;
+    requestOption.normalizedCropRect=CGRectMake(0, 0, asset.asset.pixelWidth, asset.asset.pixelHeight);
+    [self.imageManager stopCachingImagesForAssets:@[asset.asset] targetSize:CGSizeMake(asset.asset.pixelWidth, asset.asset.pixelHeight) contentMode:PHImageContentModeAspectFill options:requestOption];
+}
+-(PHCachingImageManager*)imageManager{
+    if (!_imageManager) {
+        _imageManager=[[PHCachingImageManager    alloc]init];
+    }
+    return _imageManager;
+}
+
 @end

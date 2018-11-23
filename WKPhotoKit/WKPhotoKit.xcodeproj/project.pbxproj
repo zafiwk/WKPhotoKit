@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BCC38B81B0CCF889D5A3122 /* Pods_WKPhotoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD8E7BEC6086DED6CB0459B /* Pods_WKPhotoKit.framework */; };
+		F228D06F21A29401009EE301 /* WKSelectPhotoPickerAssetsVCFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = F228D06E21A29401009EE301 /* WKSelectPhotoPickerAssetsVCFootView.m */; };
 		F23B2FF921A13C7200E72482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B2FF821A13C7200E72482 /* AppDelegate.m */; };
 		F23B2FFC21A13C7200E72482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B2FFB21A13C7200E72482 /* ViewController.m */; };
 		F23B2FFF21A13C7200E72482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23B2FFD21A13C7200E72482 /* Main.storyboard */; };
@@ -14,14 +16,28 @@
 		F23B300421A13C7300E72482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23B300221A13C7300E72482 /* LaunchScreen.storyboard */; };
 		F23B300721A13C7400E72482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B300621A13C7400E72482 /* main.m */; };
 		F23B301621A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */; };
-		F23B301A21A1405A00E72482 /* WKSelectPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */; };
+		F23B301A21A1405A00E72482 /* WKPhotoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301921A1405A00E72482 /* WKPhotoAsset.m */; };
 		F23B301E21A143C900E72482 /* WKSelectPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */; };
 		F23B302121A1459300E72482 /* WKSelectPhotoPickerData.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B302021A1459300E72482 /* WKSelectPhotoPickerData.m */; };
 		F23B302621A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */; };
 		F23B302721A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */; };
+		F23B302A21A161E900E72482 /* WKSelectPhotoPickerAssetsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F23B302921A161E900E72482 /* WKSelectPhotoPickerAssetsVC.m */; };
+		F249B22B21A180D5001D9DCE /* icon_image_no@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F249B22521A180D5001D9DCE /* icon_image_no@3x.png */; };
+		F249B22D21A180D5001D9DCE /* icon_image_no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F249B22721A180D5001D9DCE /* icon_image_no@2x.png */; };
+		F249B23121A18271001D9DCE /* WKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F249B22F21A18271001D9DCE /* WKCollectionViewCell.m */; };
+		F249B23221A18271001D9DCE /* WKCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F249B23021A18271001D9DCE /* WKCollectionViewCell.xib */; };
+		F272104721A51F7B00504B42 /* WKBrowserPhotoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F272104621A51F7B00504B42 /* WKBrowserPhotoVC.m */; };
+		F272104A21A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F272104921A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.m */; };
+		F2ECD63921A510C500E4166E /* WKBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECD63821A510C500E4166E /* WKBrowserPhotoImageView.m */; };
+		F2ECD63C21A51A4900E4166E /* WKBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECD63B21A51A4900E4166E /* WKBrowserPhotoScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD8E7BEC6086DED6CB0459B /* Pods_WKPhotoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WKPhotoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B8F962BE42ABEE5C8E75EC /* Pods-WKPhotoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKPhotoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKPhotoKit/Pods-WKPhotoKit.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E4CF25DE57536E9B1D7E4E /* Pods-WKPhotoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKPhotoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKPhotoKit/Pods-WKPhotoKit.release.xcconfig"; sourceTree = "<group>"; };
+		F228D06E21A29401009EE301 /* WKSelectPhotoPickerAssetsVCFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerAssetsVCFootView.m; sourceTree = "<group>"; };
+		F228D07021A29478009EE301 /* WKSelectPhotoPickerAssetsVCFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerAssetsVCFootView.h; sourceTree = "<group>"; };
 		F23B2FF421A13C7200E72482 /* WKPhotoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKPhotoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23B2FF721A13C7200E72482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F23B2FF821A13C7200E72482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,8 +50,8 @@
 		F23B300621A13C7400E72482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F23B301421A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroupVC.h; sourceTree = "<group>"; };
 		F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroupVC.m; sourceTree = "<group>"; };
-		F23B301821A1405A00E72482 /* WKSelectPhotoAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoAsset.h; sourceTree = "<group>"; };
-		F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoAsset.m; sourceTree = "<group>"; };
+		F23B301821A1405A00E72482 /* WKPhotoAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKPhotoAsset.h; sourceTree = "<group>"; };
+		F23B301921A1405A00E72482 /* WKPhotoAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKPhotoAsset.m; sourceTree = "<group>"; };
 		F23B301C21A143C900E72482 /* WKSelectPhotoPickerGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroup.h; sourceTree = "<group>"; };
 		F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroup.m; sourceTree = "<group>"; };
 		F23B301F21A1459300E72482 /* WKSelectPhotoPickerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerData.h; sourceTree = "<group>"; };
@@ -43,6 +59,21 @@
 		F23B302321A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerGroupVCCellTableViewCell.h; sourceTree = "<group>"; };
 		F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerGroupVCCellTableViewCell.m; sourceTree = "<group>"; };
 		F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKSelectPhotoPickerGroupVCCellTableViewCell.xib; sourceTree = "<group>"; };
+		F23B302821A161E900E72482 /* WKSelectPhotoPickerAssetsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKSelectPhotoPickerAssetsVC.h; sourceTree = "<group>"; };
+		F23B302921A161E900E72482 /* WKSelectPhotoPickerAssetsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKSelectPhotoPickerAssetsVC.m; sourceTree = "<group>"; };
+		F249B22521A180D5001D9DCE /* icon_image_no@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image_no@3x.png"; sourceTree = "<group>"; };
+		F249B22721A180D5001D9DCE /* icon_image_no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image_no@2x.png"; sourceTree = "<group>"; };
+		F249B22E21A18271001D9DCE /* WKCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKCollectionViewCell.h; sourceTree = "<group>"; };
+		F249B22F21A18271001D9DCE /* WKCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKCollectionViewCell.m; sourceTree = "<group>"; };
+		F249B23021A18271001D9DCE /* WKCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKCollectionViewCell.xib; sourceTree = "<group>"; };
+		F272104521A51F7B00504B42 /* WKBrowserPhotoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBrowserPhotoVC.h; sourceTree = "<group>"; };
+		F272104621A51F7B00504B42 /* WKBrowserPhotoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBrowserPhotoVC.m; sourceTree = "<group>"; };
+		F272104821A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBrowserPhotoCollectionVCCell.h; sourceTree = "<group>"; };
+		F272104921A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBrowserPhotoCollectionVCCell.m; sourceTree = "<group>"; };
+		F2ECD63721A510C500E4166E /* WKBrowserPhotoImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBrowserPhotoImageView.h; sourceTree = "<group>"; };
+		F2ECD63821A510C500E4166E /* WKBrowserPhotoImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBrowserPhotoImageView.m; sourceTree = "<group>"; };
+		F2ECD63A21A51A4900E4166E /* WKBrowserPhotoScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBrowserPhotoScrollView.h; sourceTree = "<group>"; };
+		F2ECD63B21A51A4900E4166E /* WKBrowserPhotoScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBrowserPhotoScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +81,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BCC38B81B0CCF889D5A3122 /* Pods_WKPhotoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E819DD8FB9D1C25B69482CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DD8E7BEC6086DED6CB0459B /* Pods_WKPhotoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41FC16A526BC7C06B360C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66B8F962BE42ABEE5C8E75EC /* Pods-WKPhotoKit.debug.xcconfig */,
+				A9E4CF25DE57536E9B1D7E4E /* Pods-WKPhotoKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F23B2FEB21A13C7200E72482 = {
 			isa = PBXGroup;
 			children = (
 				F23B2FF621A13C7200E72482 /* WKPhotoKit */,
 				F23B2FF521A13C7200E72482 /* Products */,
+				B41FC16A526BC7C06B360C32 /* Pods */,
+				5E819DD8FB9D1C25B69482CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,21 +144,14 @@
 			isa = PBXGroup;
 			children = (
 				F23B300F21A13CF400E72482 /* class */,
-				F23B300E21A13CEA00E72482 /* thirdparty */,
 			);
 			path = WKPhotoKit;
-			sourceTree = "<group>";
-		};
-		F23B300E21A13CEA00E72482 /* thirdparty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = thirdparty;
 			sourceTree = "<group>";
 		};
 		F23B300F21A13CF400E72482 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				F249B22121A180B2001D9DCE /* image */,
 				F23B302221A1564900E72482 /* view */,
 				F23B301721A13FE700E72482 /* model */,
 				F23B301321A13D7000E72482 /* vc */,
@@ -120,6 +164,10 @@
 			children = (
 				F23B301421A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.h */,
 				F23B301521A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m */,
+				F23B302821A161E900E72482 /* WKSelectPhotoPickerAssetsVC.h */,
+				F23B302921A161E900E72482 /* WKSelectPhotoPickerAssetsVC.m */,
+				F272104521A51F7B00504B42 /* WKBrowserPhotoVC.h */,
+				F272104621A51F7B00504B42 /* WKBrowserPhotoVC.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -127,8 +175,8 @@
 		F23B301721A13FE700E72482 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F23B301821A1405A00E72482 /* WKSelectPhotoAsset.h */,
-				F23B301921A1405A00E72482 /* WKSelectPhotoAsset.m */,
+				F23B301821A1405A00E72482 /* WKPhotoAsset.h */,
+				F23B301921A1405A00E72482 /* WKPhotoAsset.m */,
 				F23B301C21A143C900E72482 /* WKSelectPhotoPickerGroup.h */,
 				F23B301D21A143C900E72482 /* WKSelectPhotoPickerGroup.m */,
 				F23B301F21A1459300E72482 /* WKSelectPhotoPickerData.h */,
@@ -143,8 +191,28 @@
 				F23B302321A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.h */,
 				F23B302421A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m */,
 				F23B302521A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib */,
+				F249B22E21A18271001D9DCE /* WKCollectionViewCell.h */,
+				F249B22F21A18271001D9DCE /* WKCollectionViewCell.m */,
+				F249B23021A18271001D9DCE /* WKCollectionViewCell.xib */,
+				F228D07021A29478009EE301 /* WKSelectPhotoPickerAssetsVCFootView.h */,
+				F228D06E21A29401009EE301 /* WKSelectPhotoPickerAssetsVCFootView.m */,
+				F2ECD63721A510C500E4166E /* WKBrowserPhotoImageView.h */,
+				F2ECD63821A510C500E4166E /* WKBrowserPhotoImageView.m */,
+				F2ECD63A21A51A4900E4166E /* WKBrowserPhotoScrollView.h */,
+				F2ECD63B21A51A4900E4166E /* WKBrowserPhotoScrollView.m */,
+				F272104821A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.h */,
+				F272104921A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F249B22121A180B2001D9DCE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				F249B22721A180D5001D9DCE /* icon_image_no@2x.png */,
+				F249B22521A180D5001D9DCE /* icon_image_no@3x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F23B300A21A13C7400E72482 /* Build configuration list for PBXNativeTarget "WKPhotoKit" */;
 			buildPhases = (
+				FC7933532414C4778B23CACF /* [CP] Check Pods Manifest.lock */,
 				F23B2FF021A13C7200E72482 /* Sources */,
 				F23B2FF121A13C7200E72482 /* Frameworks */,
 				F23B2FF221A13C7200E72482 /* Resources */,
+				1E2ED2FF067AF3B101D52B38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,7 +275,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F249B22D21A180D5001D9DCE /* icon_image_no@2x.png in Resources */,
 				F23B300421A13C7300E72482 /* LaunchScreen.storyboard in Resources */,
+				F249B22B21A180D5001D9DCE /* icon_image_no@3x.png in Resources */,
+				F249B23221A18271001D9DCE /* WKCollectionViewCell.xib in Resources */,
 				F23B300121A13C7300E72482 /* Assets.xcassets in Resources */,
 				F23B2FFF21A13C7200E72482 /* Main.storyboard in Resources */,
 				F23B302721A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.xib in Resources */,
@@ -214,19 +287,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E2ED2FF067AF3B101D52B38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoKit/Pods-WKPhotoKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoKit/Pods-WKPhotoKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7933532414C4778B23CACF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WKPhotoKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F23B2FF021A13C7200E72482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F249B23121A18271001D9DCE /* WKCollectionViewCell.m in Sources */,
 				F23B302121A1459300E72482 /* WKSelectPhotoPickerData.m in Sources */,
 				F23B301E21A143C900E72482 /* WKSelectPhotoPickerGroup.m in Sources */,
 				F23B2FFC21A13C7200E72482 /* ViewController.m in Sources */,
 				F23B302621A1566400E72482 /* WKSelectPhotoPickerGroupVCCellTableViewCell.m in Sources */,
+				F228D06F21A29401009EE301 /* WKSelectPhotoPickerAssetsVCFootView.m in Sources */,
 				F23B301621A13FDC00E72482 /* WKSelectPhotoPickerGroupVC.m in Sources */,
-				F23B301A21A1405A00E72482 /* WKSelectPhotoAsset.m in Sources */,
+				F23B301A21A1405A00E72482 /* WKPhotoAsset.m in Sources */,
+				F23B302A21A161E900E72482 /* WKSelectPhotoPickerAssetsVC.m in Sources */,
 				F23B300721A13C7400E72482 /* main.m in Sources */,
+				F272104721A51F7B00504B42 /* WKBrowserPhotoVC.m in Sources */,
+				F2ECD63C21A51A4900E4166E /* WKBrowserPhotoScrollView.m in Sources */,
+				F2ECD63921A510C500E4166E /* WKBrowserPhotoImageView.m in Sources */,
 				F23B2FF921A13C7200E72482 /* AppDelegate.m in Sources */,
+				F272104A21A51FBB00504B42 /* WKBrowserPhotoCollectionVCCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +487,13 @@
 		};
 		F23B300B21A13C7400E72482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B8F962BE42ABEE5C8E75EC /* Pods-WKPhotoKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2U3ZPPSL6;
 				INFOPLIST_FILE = WKPhotoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,11 +506,13 @@
 		};
 		F23B300C21A13C7400E72482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E4CF25DE57536E9B1D7E4E /* Pods-WKPhotoKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G2U3ZPPSL6;
 				INFOPLIST_FILE = WKPhotoKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

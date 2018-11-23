@@ -11,11 +11,8 @@
 #import <Photos/Photos.h>
 NS_ASSUME_NONNULL_BEGIN
 
-typedef  NS_ENUM(NSInteger,WKSelectPhotoSize){
-    WKSelectPhotoSizeOrigin,        //原图
-    WKSelectPhotoSizeThumb ,        //缩略图
-};
-@interface WKSelectPhotoAsset : NSObject
+
+@interface WKPhotoAsset : NSObject
 @property (strong,nonatomic)PHAsset *asset;
 /**
  获取图片的URL
@@ -24,12 +21,7 @@ typedef  NS_ENUM(NSInteger,WKSelectPhotoSize){
  */
 -(NSString*)burstIdentifier;
 
-/**
- 在当前imageView展示图片
-
- @param view UIImageView对象
- */
--(void)showPhotoWithImageView:(UIImageView*)view withSize:(WKSelectPhotoSize)size;
+@property(nonatomic)bool originalSize;
 
 @end
 

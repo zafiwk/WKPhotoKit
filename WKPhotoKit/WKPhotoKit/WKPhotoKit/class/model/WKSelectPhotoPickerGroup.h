@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WKSelectPhotoAsset.h"
+#import "WKPhotoAsset.h"
 
 
 @interface WKSelectPhotoPickerGroup : NSObject
@@ -34,7 +34,7 @@
 
 @property(nonatomic,strong)PHAssetCollection* group;
 
-@property(nonatomic,strong)WKSelectPhotoAsset* firstAsset;
+@property(nonatomic,strong)WKPhotoAsset* firstAsset;
 
 @end
 
