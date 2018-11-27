@@ -7,7 +7,7 @@
 //
 
 #import "WKBrowserPhotoCollectionVCCell.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 @interface WKBrowserPhotoCollectionVCCell()
 
 @end
