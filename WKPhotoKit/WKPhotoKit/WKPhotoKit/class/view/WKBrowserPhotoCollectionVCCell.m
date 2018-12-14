@@ -18,9 +18,11 @@
     if (self) {
         self.scrollView=[[WKBrowserPhotoScrollView alloc]init];
         [self.contentView addSubview:self.scrollView];
+        
+        CGFloat scrollViewWidth=self.contentView.bounds.size.width-20;
         [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.bottom.mas_equalTo(0);
-            make.right.mas_equalTo(-20);
+            make.width.mas_equalTo(scrollViewWidth);
         }];
     }
     return self;
