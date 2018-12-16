@@ -38,7 +38,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.collectionView reloadData];
-    self.makeLabel.text=[NSString stringWithFormat:@"%ld",self.selectPhotoDataArray.count];
+    if (self.selectPhotoDataArray.count==0) {
+        self.makeLabel.hidden=YES;
+    }else{
+        self.makeLabel.hidden=NO;
+        self.makeLabel.text=[NSString stringWithFormat:@"%ld",self.selectPhotoDataArray.count];
+    }
 }
 -(void)setupToorbar{
     UIToolbar* toorBar=[[UIToolbar alloc]init];
