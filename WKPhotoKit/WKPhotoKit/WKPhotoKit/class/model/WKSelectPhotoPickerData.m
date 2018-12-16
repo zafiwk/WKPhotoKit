@@ -131,7 +131,11 @@ static WKSelectPhotoPickerData* pick;
 
 
     [self.imageManager requestImageForAsset:phAsset targetSize:size contentMode:PHImageContentModeAspectFill options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            callBack(result);
+        BOOL downloadFinined = ![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey] && ![[info objectForKey:PHImageResultIsDegradedKey] boolValue];
+        if (callBack&&downloadFinined) {
+             callBack(result);
+        }
+       
     }];
     
   

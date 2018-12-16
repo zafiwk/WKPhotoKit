@@ -134,6 +134,7 @@
 #pragma mark doneBtnClick
 -(void)doneBtnClick{
     [self.hud showAnimated:YES];
+    
     if(self.selectPhotoDataArray.count==0){
         [self.hud hideAnimated:YES];
         self.block(self.imageArray);

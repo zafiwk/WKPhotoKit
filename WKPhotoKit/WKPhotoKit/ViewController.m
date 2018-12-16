@@ -67,6 +67,7 @@
     UINavigationController* naviC=[[UINavigationController alloc]initWithRootViewController:vc];
     __weak typeof(self) weakSelf = self;
     vc.block = ^(NSArray * _Nonnull array) {
+        NSLog(@"选择的照片数目:%ld",array.count);
         weakSelf.images= array;
         [weakSelf.collectionView reloadData];
     };
